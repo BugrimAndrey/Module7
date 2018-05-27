@@ -1,0 +1,396 @@
+* {
+margin:0;
+padding:0;
+font-family: Arial;
+    }
+body {background: url(../img/bg.jpg) no-repeat;}
+       	
+nav {
+width:824px;
+height: 230px;
+margin: 0 auto;
+    }
+ ul{
+list-style-type: none;
+}    
+#nav{
+float:left;
+width:824px;
+height: 230px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+	}
+#nav li{
+float:left;
+padding: 1px;
+display:block;
+}
+#nav li a{
+display:block;
+text-decoration: none;
+font-family: 'Pathway Gothic One', sans-serif;
+font-size: 28px;
+color:#fff;
+/*margin-left: 50px;
+margin-top: 100px;*/
+	}
+#nav li a:hover{color:#000;}
+
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+.submenu{
+	margin-top: 92px;
+}
+#nav ul{
+list-style:none;
+position:absolute;
+left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+opacity:0; /* Устанавливаем начальное состояние прозрачности */
+display: block;
+color: #000;
+background-color: #fff;
+text-decoration: none;
+	}
+
+#nav ul {
+position: relative;
+background: #fff;
+display: block;
+padding: 5px;
+list-style: none;
+margin-top: 4px;
+/*margin-left: 10px;*/
+border-radius: 5px;
+    }
+#nav ul:after, #nav ul:before {
+bottom: 100%;
+left: 50%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+#nav ul:after {
+border-color: rgba(136, 183, 213, 0);
+border-bottom-color: #fff;
+border-width: 4px;
+margin-left: -4px;
+	}
+#nav ul:before {
+border-color: rgba(194, 225, 245, 0);
+border-bottom-color: #fff;
+border-width: 5px;
+margin-left: -5px;
+}
+
+#nav ul li{
+float:none;
+	}
+#nav ul li a {
+display:block;
+text-align: center;
+font-size: 20px;
+margin: 0px;
+padding: 0px;
+	}
+#nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+left:0; /* Приносим его обратно на экран, когда нужно */
+opacity:1; /* Делаем непрозрачным */
+}
+#nav li:hover a{color: #000;}
+
+#nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+text-decoration:none;}
+.logo{
+font-family: 'Dorsa', sans-serif; 	
+}
+.round {
+/*margin-top: 40px; 
+margin-left: 50px;*/
+width: 140px;
+height: 140px;
+border-radius: 50%;
+font-size: 59.58px;
+color: #000;
+line-height: 140px;
+text-align: center;
+background: #fff;
+    }
+.content{
+width:1024px;
+height: 1230px;
+margin: 0 auto;
+background: #fff;
+}
+    
+.top-content{
+width: 1024px;
+height: 650px;
+margin: 0 auto;
+background: #fff;
+display: flex;
+     }
+
+.left{
+width: 645px;
+height: 535px;
+position: relative;
+top: 88px;
+left: 60px;
+flex: none;
+}
+img{
+float: left;
+margin: 0 25px 15px 0;
+border: 0; 
+}
+.font {
+font-family: 'Pathway Gothic One', sans-serif;
+font-size: 32px;
+}
+.font1 {
+font-size: 15px;
+margin-bottom: 15px;
+}
+.font2 {
+font-size: 13px;
+line-height: 20px;
+}
+/*.cont-left{
+width: 700px;
+height: 600px;
+}*/
+.cont-left, .cont-right{
+margin-top: 50px;
+}
+.right {
+width: 220px;
+height: 535px;
+position: relative;
+top: 88px;
+left: 100px;
+flex: none;
+}
+.cont-right{
+width: 320px;
+}
+.cont-right-li1{
+display: flex;
+}
+.small-round, .small-round1, .small-round2  {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+font-size: 15px;
+color: #fff;
+line-height: 30px;
+text-align: center;
+background: #b1d6fa;
+flex: none;
+}
+.small-round::before {
+content: "1";
+}
+.small-round1::before {
+content: "2";
+}
+.small-round2::before {
+content: "3";
+}
+
+.text-right{
+width: 170px;
+margin-left: 10px;
+flex: none;
+}
+
+/*.bold {
+font-weight: bold;
+margin-bottom: 8px;
+ }*/
+hr {
+width: 900px;
+background-color: #c4b9bb; 
+height: 1px; 
+margin: 0px 60px 55px 60px;
+}
+
+.bottom-content{
+width: 1024px;
+height: 280px;
+margin: 0 auto;
+background: #fff;
+display: flex;
+}
+
+.left1 {
+width: 640px;
+height: 290px;
+margin: 0px 0px 20px 60px;
+flex: none;
+}
+.left11 {
+margin-top: 33px;
+}
+
+.right1 {
+width: 210px;
+height: 500px;
+margin: 0px 60px 20px 40px;
+flex: none;
+}
+/*.bottom-right{
+width: 180px;
+height: 170px;
+background: #f5ebeb;
+padding: 10px 10px 10px 10px;
+margin-top: 20px;
+border: 2px solid #ded1d1;
+font-weight: bold;
+}*/
+.arrow_box {
+position: relative;
+background: #dfe5e6;
+border: 1px solid #ada6a6;
+margin-top: 15px;
+padding: 15px 15px 0px 15px;
+}
+.arrow_box:after, .arrow_box:before {
+top: 100%;
+left: 50%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+
+.arrow_box:after {
+border-color: rgba(223, 229, 230, 0);
+border-top-color: #dfe5e6;
+border-width: 16px;
+margin-left: -15px;
+}
+.arrow_box:before {
+border-color: rgba(173, 166, 166, 0);
+border-top-color: #ada6a6;
+border-width: 17px;
+margin-left: -16px;
+}
+
+/*
+.font1{
+ font-weight: bold;
+ margin-top: 30px;
+ margin-bottom: 15px;	
+}*/
+.right2 {
+width: 220px;
+height: 100px;
+margin: 40px 60px 20px 0px;
+text-align: center;
+}
+
+
+.left2 {
+width: 650px;
+height: 200px;
+margin: 30px 0px 20px 60px;
+display: flex;
+}
+.left21 {
+width: 300px;
+height: 250px;
+flex: none;
+}
+.left22 {
+width: 300px;
+height: 250px;
+flex: none;
+}
+
+.left4 {
+width: 250px;
+height: 20px;
+font-weight: bold;
+}
+.left4:before {
+content: '\2192     ';
+color: blue;	
+}
+
+.Footer1 {
+width: 1024px;
+height: 130px;
+margin: 0 auto;
+background: #414a70;
+display: flex;
+text-decoration: none;
+     }
+.Footer1 ul li a {
+text-decoration: none;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 16px;
+color: #fff;
+display:inline-block;
+    }
+.Footer1 ul li a:hover {color: #000;}
+
+.Footer1 ul li p {
+text-decoration: none;
+font-size: 12px;
+color: #fff;
+}
+.footer11{
+margin: 32px 0px 0px 125px;
+}
+.footer12 {
+margin: 8px 0px 0px 125px;
+}
+
+footer {
+width: 1024px;
+height: 135px;
+margin: 0 auto;
+    }
+           
+footer ul{
+position: relative;
+left: 350px;
+list-style-type: none;
+      }
+footer ul li {
+float:left;
+     }
+footer ul li a {
+margin: 5px 0px 0px 5px;
+display:inline-block;
+     }
+/*footer ul li a img{
+margin: 7px 0px 0px 9px;
+}*/
+footer ul li a:hover {color: #000;}
+
+.round1 {
+margin-top: 30px; 
+margin-left: 20px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+font-size: 25px;
+color: #000;
+line-height: 140px;
+text-align: center;
+background: #fff;  
+}
+footer p {
+clear: left;
+margin: 0px 0px 0px 250px;
+padding-top: 20px;
+padding-bottom: 25px; 
+color: #fff;
+      }

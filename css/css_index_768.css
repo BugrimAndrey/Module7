@@ -1,0 +1,393 @@
+* {
+margin:0;
+padding:0;
+font-family: Arial;
+    }
+body {background: url(../img/bg_768.jpg) no-repeat;}
+       	
+.nav {
+width:768px;
+height: 230px;
+margin: 0 auto;
+    }
+ ul{
+list-style-type: none;
+}    
+
+#nav{
+float:left;
+width:300px;
+height: 52px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+  }
+
+ .line-nav{
+width: 300px;
+margin-left: 234px;
+  
+ }
+#nav li{
+float:left;
+padding: 1px;
+display:block;
+}
+#nav li a{
+display:block;
+text-decoration: none;
+font-family: 'Pathway Gothic One', sans-serif;
+font-size: 28px;
+color:#fff;
+  }
+#nav li a:hover{color:#000;}
+
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+.submenu{
+  margin-top: 87px;
+}
+#nav ul{
+list-style:none;
+position:absolute;
+left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+opacity:0; /* Устанавливаем начальное состояние прозрачности */
+display: block;
+color: #000;
+background-color: #fff;
+text-decoration: none;
+  }
+
+#nav ul {
+position: relative;
+background: #fff;
+display: block;
+padding: 5px;
+list-style: none;
+margin-top: 4px;
+/*margin-left: 60px;*/
+border-radius: 5px;
+    }
+#nav ul:after, #nav ul:before {
+bottom: 100%;
+left: 50%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+#nav ul:after {
+border-color: rgba(136, 183, 213, 0);
+border-bottom-color: #fff;
+border-width: 4px;
+margin-left: -4px;
+  }
+#nav ul:before {
+border-color: rgba(194, 225, 245, 0);
+border-bottom-color: #fff;
+border-width: 5px;
+margin-left: -5px;
+}
+
+#nav ul li{
+float:none;
+  }
+#nav ul li a {
+display:block;
+text-align: center;
+font-size: 20px;
+margin: 0px;
+padding: 0px;
+  }
+#nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+left:0; /* Приносим его обратно на экран, когда нужно */
+opacity:1; /* Делаем непрозрачным */
+}
+#nav li:hover a{color: #000;}
+
+#nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+text-decoration:none;}
+.logo{
+font-family: 'Dorsa', sans-serif;   
+}
+.round {
+margin: 20px 0 14px 318px; 
+width: 100px;
+height: 100px;
+border-radius: 50%;
+font-size: 43.6px;
+color: #000;
+line-height: 100px;
+text-align: center;
+background: #fff;
+    }
+
+
+.content{
+width:768px;
+height: 1485px;
+margin: 0 auto;
+background: #fff;
+}
+    
+.top-content{
+width: 768px;
+height: 900px;
+margin: 0 auto;
+background: #fff;
+     }
+
+.left{
+width: 680px;
+height: 470px;
+position: relative;
+top: 88px;
+left: 45px;
+flex: none;
+}
+img{
+float: left;
+margin: 0 25px 10px 0;
+border: 0; 
+}
+.font {
+font-family: 'Pathway Gothic One', sans-serif;
+font-size: 28px;
+}
+.font1 {
+font-size: 15px;
+margin-bottom: 15px;
+}
+.font2 {
+font-size: 13px;
+line-height: 19px;
+}
+.font3 {
+font-size: 11px;
+}
+.font4 {
+font-size: 16px;
+margin-bottom: 10px;
+}
+/*.cont-left{
+width: 700px;
+height: 600px;
+}*/
+.cont-left {
+margin-top: 50px;
+}
+.right {
+width: 680px;
+height: 180px;
+position: relative;
+top: 180px;
+left: 45px;
+
+}
+.cont-right{
+width: 680px;
+display: flex;
+margin: 40px 0 0 0;
+}
+.cont-right-li1{
+display: flex;
+margin-right: 25px;
+}
+.small-round, .small-round1, .small-round2  {
+width: 30px;
+height: 30px;
+border-radius: 50%;
+font-size: 15px;
+color: #fff;
+line-height: 30px;
+text-align: center;
+background: #b1d6fa;
+flex: none;
+}
+.small-round::before {
+content: "1";
+}
+.small-round1::before {
+content: "2";
+}
+.small-round2::before {
+content: "3";
+}
+
+.text-right{
+width: 170px;
+margin-left: 10px;
+flex: none;
+}
+
+
+hr {
+width: 680px;
+background-color: #c4b9bb; 
+height: 1px; 
+margin: 40px 0 40px 0;
+}
+
+.bottom-content{
+width: 768px;
+height: 350px;
+margin: 0 auto;
+background: #fff;
+display: flex;
+}
+
+.left1 {
+width: 495px;
+height: 290px;
+margin: 50px 0px 0px 60px;
+flex: none;
+}
+.left11 {
+margin-top: 45px;
+}
+
+.right1 {
+width: 155px;
+height: 255px;
+margin: 50px 60px 22px 25px;
+flex: none;
+}
+
+.arrow_box {
+position: relative;
+background: #fcfafa;
+border: 1px solid #ada6a6;
+margin-top: 15px;
+padding: 15px 15px 0px 15px;
+}
+.arrow_box:after, .arrow_box:before {
+top: 100%;
+left: 50%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+
+.arrow_box:after {
+border-color: rgba(223, 229, 230, 0);
+border-top-color: #fcfafa;
+border-width: 16px;
+margin-left: -15px;
+}
+.arrow_box:before {
+border-color: rgba(173, 166, 166, 0);
+border-top-color: #ada6a6;
+border-width: 17px;
+margin-left: -16px;
+}
+
+.right2 {
+width: 170px;
+height: 50px;
+margin: 50px 20px 20px 0px;
+text-align: center;
+}
+
+
+.left2 {
+width: 485px;
+height: 200px;
+margin: 0px 0px 20px 60px;
+font-size: 15px;
+display: flex;
+}
+.left21 {
+width: 270px;
+height: 210px;
+flex: none;
+}
+.left22 {
+width: 220px;
+height: 210px;
+flex: none;
+}
+
+.left4 {
+width: 250px;
+height: 20px;
+
+}
+.left4:before {
+content: '\2192     ';
+color: blue;	
+}
+
+.Footer1 {
+width: 768px;
+height: 130px;
+margin: 0 auto;
+background: #414a70;
+display: flex;
+text-decoration: none;
+     }
+.Footer1 ul li a {
+text-decoration: none;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 16px;
+color: #fff;
+display:inline-block;
+    }
+.Footer1 ul li a:hover {color: #000;}
+
+.Footer1 ul li p {
+text-decoration: none;
+font-size: 12px;
+color: #fff;
+}
+.footer11{
+margin: 32px 0px 0px 100px;
+}
+.footer12 {
+margin: 8px 0px 0px 100px;
+}
+
+footer {
+width: 768px;
+height: 135px;
+margin: 0 auto;
+    }
+           
+footer ul{
+position: relative;
+left: 280px;
+list-style-type: none;
+      }
+footer ul li {
+float:left;
+     }
+footer ul li a {
+margin: 5px 0px 0px 5px;
+display:inline-block;
+     }
+
+footer ul li a:hover {color: #000;}
+
+.round1 {
+margin-top: 30px; 
+margin-left: 20px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+font-size: 25px;
+color: #000;
+line-height: 140px;
+text-align: center;
+background: #fff;  
+}
+footer p {
+clear: left;
+margin: 0px 0px 0px 220px;
+padding-top: 20px;
+padding-bottom: 25px; 
+color: #fff;
+      }

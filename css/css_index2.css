@@ -1,0 +1,12 @@
+.map {
+    width: 600px;
+    border: 4px double black; 
+    background: grey; 
+    padding: 10px;
+    margin: 20px 0 0 20px;
+      }
+p {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 20px 0 0 30px;
+}
